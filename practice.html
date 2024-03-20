@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emotion Recognition Website</title>
+  <link rel="stylesheet" href="practice.css">
+</head>
+<body>
+  <div class="flex-container">
+    <div class="container">
+      <h1>Emotion Recognition</h1>
+      <textarea id="inputText" placeholder="Enter your sentence here..."></textarea>
+      <button id = "recognizeButton" onclick="recognizeEmotion()">Recognize Emotion</button>
+      <div id="result"></div>
+      <button id="resetButton" onclick="resetInput()">Reset</button> 
+    </div>
+  </div>
+  <canvas id="background"></canvas>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/natural/10.2.4/natural.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/natural/10.2.4/natural/stemmers/porter_stemmer.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
