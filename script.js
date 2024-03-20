@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", async function() {
     const model = await loadModel();
     const stemmer = natural.PorterStemmer;
     const stemmedTokens = tokens.map(token => stemmer.stem(token));
-    console.log(stemmedTokens); // Output: ['the', 'quick', 'brown', 'fox', 'jump', 'over', 'the', 'lazi', 'dog', '.']
+    console.log(stemmedTokens); 
     tokensArray.push(stemmedTokens);
 
     const length_of_longest_sentence = 66; 
